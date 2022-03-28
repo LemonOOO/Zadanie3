@@ -1,0 +1,13 @@
+﻿@page
+@model ZapisaneModel
+@{
+ViewData["Title"] = "Data in session";
+}
+<p>Dane w zapisane w sesji</p>
+@if (model.Forms != null)
+{
+<p>@Html.DisplayNameFor(model => model.Forms.name):
+@model.Forms.name </p>
+<p>@Html.DisplayNameFor(model => model.Forms.yearOfBirth):
+@model.Forms.yearOfBirth </p>
+}
